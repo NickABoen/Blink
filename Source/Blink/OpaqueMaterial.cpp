@@ -2,6 +2,10 @@
 
 #include "OpaqueMaterial.h"
 
+void HandleHit(AActor* HitActor, AActor* OtherActor, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, FHitResult Hit)
+{
+	
+}
 
 
 

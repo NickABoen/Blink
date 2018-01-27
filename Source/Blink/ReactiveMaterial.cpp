@@ -38,7 +38,7 @@ void UReactiveMaterial::SetMeshMaterial(UStaticMeshComponent* static_mesh_compon
 	// ...
 }
 
-void UReactiveMaterial::HandlePlayerHit(AActor* HitActor, AActor* OtherActor, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, HitResult Hit)
+void UReactiveMaterial::HandleHit(AActor* HitActor, AActor* OtherActor, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, FHitResult Hit)
 {
 	// ...
 }
