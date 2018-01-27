@@ -23,5 +23,10 @@ void AEmissive::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if (IsMoving() && ReadyForNewTrace) 
+	{
+		// TODO:
+		// Keep tracing
+	}
 }
 

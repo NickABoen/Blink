@@ -12,6 +12,7 @@ class BLINK_API AEmissive : public AActor
 	GENERATED_BODY()
 	
 public:	
+
 	// Sets default values for this actor's properties
 	AEmissive();
 
@@ -23,6 +24,14 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UFUNCTION(BlueprintCallable)
+	bool IsMoving() { return !IsStationary; }
 	
+	void Stop() { IsStationary = false; }
+	void Start() { IsStationary = true; }
+	
+private:
+	bool IsStationary;
+	bool ReadyForNewTrace;
 	
 };

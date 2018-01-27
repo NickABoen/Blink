@@ -2,10 +2,14 @@
 
 #include "OpaqueMaterial.h"
 
-void HandleHit(AActor* HitActor, AActor* OtherActor, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, FHitResult Hit)
+void UOpaqueMaterial::HandleProjectileHit(AEmissive* EmissiveActor, FVector HitLocation, FVector HitNormal, FHitResult Hit)
 {
-	
+
 }
 
+void UOpaqueMaterial::HandlePawnHit(AEmissivePawn* EmissivePawn, FVector HitLocation, FVector HitNormal, FHitResult Hit)
+{
+
+}
 
 

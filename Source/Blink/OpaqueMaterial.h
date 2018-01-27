@@ -19,6 +19,9 @@ class BLINK_API UOpaqueMaterial : public UReactiveMaterial
 public:
 
 	UFUNCTION(BlueprintCallable)
-	virtual void HandleHit(AActor* HitActor, AActor* OtherActor, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, FHitResult Hit) override;
+	virtual void HandleProjectileHit(AEmissive* EmissiveActor, FVector HitLocation, FVector HitNormal, FHitResult Hit) override;
+
+	UFUNCTION(BlueprintCallable)
+	virtual void HandlePawnHit(AEmissivePawn* EmissivePawn, FVector HitLocation, FVector HitNormal, FHitResult Hit) override;
 
 };
