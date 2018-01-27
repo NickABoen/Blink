@@ -35,6 +35,8 @@ public:
 
 	// Have the ReactiveMaterial handle player collision
 	UFUNCTION(BlueprintCallable)
-	virtual void HandlePlayerHit(APawn const * player_pawn, APlayerController const*  player_controller);
+	virtual void HandleProjectileHit(AEmissive* EmissiveActor, FVector HitLocation, FVector HitNormal, FHitResult Hit);
 
+	UFUNCTION(BlueprintCallable)
+	virtual void HandlePawnHit(AEmissivePawn* EmissivePawn, FVector HitLocation, FVector HitNormal, FHitResult Hit);
 };

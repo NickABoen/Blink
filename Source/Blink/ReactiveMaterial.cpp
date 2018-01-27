@@ -38,8 +38,6 @@ void UReactiveMaterial::SetMeshMaterial(UStaticMeshComponent* static_mesh_compon
 	// ...
 }
 
-void UReactiveMaterial::HandlePlayerHit(APawn const* player_pawn, APlayerController const* player_controller)
-{
-	// ...
-}
+void UReactiveMaterial::HandleProjectileHit(AEmissive* EmissiveActor, FVector HitLocation, FVector HitNormal, FHitResult Hit) {}
 
+void UReactiveMaterial::HandlePawnHit(AEmissivePawn* EmissivePawn, FVector HitLocation, FVector HitNormal, FHitResult Hit) {}

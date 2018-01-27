@@ -13,4 +13,13 @@ UCLASS(Blueprintable, ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class BLINK_API UOpaqueMaterial : public UReactiveMaterial
 {
 	GENERATED_BODY()
+
+public:
+
+	UFUNCTION(BlueprintCallable)
+	virtual void HandleProjectileHit(AEmissive* EmissiveActor, FVector HitLocation, FVector HitNormal, FHitResult Hit) override;
+
+	UFUNCTION(BlueprintCallable)
+	virtual void HandlePawnHit(AEmissivePawn* EmissivePawn, FVector HitLocation, FVector HitNormal, FHitResult Hit) override;
+
 };
